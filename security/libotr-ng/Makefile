@@ -17,6 +17,7 @@ GNU_CONFIGURE=	yes
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgoldilocks.so:security/libgoldilocks \
 		libgpg-error.so:security/libgpg-error \
+                libotr.so:security/libotr \
 		libsodium.so:security/libsodium
 
 USES=		autoreconf gmake gnome libtool pkgconfig
