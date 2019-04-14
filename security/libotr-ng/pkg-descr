@@ -1,0 +1,4 @@
+libotr-ng is primarily meant to be used by instance messaging clients
+to provide OTRv4 encryption on top of the library.
+
+WWW: https://github.com/otrv4/libotr-ng
