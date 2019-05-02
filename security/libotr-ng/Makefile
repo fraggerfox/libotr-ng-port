@@ -29,6 +29,12 @@ GH_ACCOUNT=	otrv4
 GH_PROJECT=	libotr-ng
 GH_TAGNAME=	97a6306
 
+# This is needed for libotr to be detected correctly
+CPPFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-L${LOCALBASE}/lib
+CONFIGURE_ARGS=	--with-libotr-prefix=${LOCALBASE}/lib \
+		--with-libotr-inc-prefix=${LOCALBASE}/include
+
 INSTALL_TARGET?=	install-strip
 
 .include <bsd.port.mk>
