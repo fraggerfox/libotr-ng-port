@@ -1,3 +1,7 @@
+"%zu" should be used for size_t variables and not "%lu".
+
+XXX: Discuss this with upstream people.
+
 --- src/alloc.c.orig	2019-05-05 15:22:09 UTC
 +++ src/alloc.c
 @@ -39,7 +39,7 @@ INTERNAL /*@only@*/ /*@notnull@*/ void *otrng_xmalloc(
@@ -5,7 +9,7 @@
        oom_handler();
      }
 -    fprintf(stderr, "fatal: memory exhausted (xmalloc of %lu bytes).\n", size);
-+    fprintf(stderr, "fatal: memory exhausted (xmalloc of %u bytes).\n", size);
++    fprintf(stderr, "fatal: memory exhausted (xmalloc of %zu bytes).\n", size);
      exit(EXIT_FAILURE);
    }
  
@@ -14,7 +18,7 @@
        oom_handler();
      }
 -    fprintf(stderr, "fatal: memory exhausted (xrealloc of %lu bytes).\n", size);
-+    fprintf(stderr, "fatal: memory exhausted (xrealloc of %u bytes).\n", size);
++    fprintf(stderr, "fatal: memory exhausted (xrealloc of %zu bytes).\n", size);
      exit(EXIT_FAILURE);
    }
  
