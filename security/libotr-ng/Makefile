@@ -37,4 +37,11 @@ CONFIGURE_ARGS=	--with-libotr-prefix=${LOCALBASE}/lib \
 
 INSTALL_TARGET?=	install-strip
 
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${ARCH} == i386
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-src_alloc.c
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-src_client.c
+.endif
+
 .include <bsd.port.mk>
