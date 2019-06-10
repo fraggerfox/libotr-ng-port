@@ -27,7 +27,7 @@ GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	otrv4
 GH_PROJECT=	libotr-ng
-GH_TAGNAME=	b40e141
+GH_TAGNAME=	1f81d6a
 
 # This is needed for libotr to be detected correctly
 CPPFLAGS+=	-I${LOCALBASE}/include
