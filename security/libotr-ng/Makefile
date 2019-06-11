@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libotr-ng
-PORTVERSION=	0.0.0
+DISTVERSION=	g20190604
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/otrv4/libotr-ng/
 
