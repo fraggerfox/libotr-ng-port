@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libotr-ng
-DISTVERSION=	g20190621
+DISTVERSION=	g20190622
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/otrv4/libotr-ng/
 
@@ -27,7 +27,7 @@ GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	otrv4
 GH_PROJECT=	libotr-ng
-GH_TAGNAME=	8531765
+GH_TAGNAME=	ee7b254
 
 # This is needed for libotr to be detected correctly
 CPPFLAGS+=	-I${LOCALBASE}/include
