@@ -1,8 +1,10 @@
 # $FreeBSD$
 
+# WIP Package, remove / replace all wip instances before submission
+
 PORTNAME=	libotr-ng
 DISTVERSION=	g20190703
-CATEGORIES=	security
+CATEGORIES=	wip security
 MASTER_SITES=	https://github.com/otrv4/libotr-ng/
 
 MAINTAINER=	santhosh.raju@gmail.com
@@ -13,7 +15,7 @@ LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
-		libgoldilocks.so:security/libgoldilocks \
+		libgoldilocks.so:wip/libgoldilocks \
 		libgpg-error.so:security/libgpg-error \
 		libotr.so:security/libotr \
 		libsodium.so:security/libsodium
