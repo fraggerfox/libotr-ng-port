@@ -7,7 +7,7 @@ DISTVERSION=	g20190910
 CATEGORIES=	wip security
 MASTER_SITES=	https://github.com/otrv4/libotr-ng/
 
-MAINTAINER=	santhosh.raju@gmail.com
+MAINTAINER=	fox@FreeBSD.org
 COMMENT=	Library providing implementation of OTR with support for \
 		version 4
 
