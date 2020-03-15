@@ -39,4 +39,10 @@ CONFIGURE_ARGS=	--with-libotr-prefix=${LOCALBASE}/lib \
 
 INSTALL_TARGET?=	install-strip
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == "i386"
+EXTRA_PATCHES+= ${FILESDIR}/extra-i386-src_client__profile.c
+.endif
+
+.include <bsd.port.post.mk>
