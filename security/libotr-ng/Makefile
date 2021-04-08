@@ -3,7 +3,7 @@
 # WIP Package, remove / replace all wip instances before submission
 
 PORTNAME=	libotr-ng
-DISTVERSION=	g20200303
+DISTVERSION=	g20210208
 CATEGORIES=	wip security
 MASTER_SITES=	https://github.com/otrv4/libotr-ng/
 
@@ -29,7 +29,7 @@ GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	otrv4
 GH_PROJECT=	libotr-ng
-GH_TAGNAME=	cd983b2
+GH_TAGNAME=	10de279
 
 # This is needed for libotr to be detected correctly
 CPPFLAGS+=	-I${LOCALBASE}/include
